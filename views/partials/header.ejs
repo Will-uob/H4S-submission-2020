@@ -1,0 +1,12 @@
+<header>
+  <a href="/" id="header-logo">Learn JavaScript</a>
+  <nav>
+    <a href="/learn" class="highlight-button">Learn</a>
+    <% if (!name) { %>
+    <a href="/login">Login</a>
+    <a href="/signup">Sign Up</a>
+    <% } else { %>
+    <a href="/logout">Log Out</a>
+    <% } %>
+  </nav>
+</header>

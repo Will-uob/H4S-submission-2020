@@ -1,0 +1,23 @@
+<h1 class="page-title">Login</h1>
+
+<% if (messages.error) { %>
+<div class="error"><%= messages.error %></div>
+<% } %>
+
+<% if (messages.info) { %>
+<div class="info"><%= messages.info %></div>
+<% } %>
+
+<form action="/login" method="POST">
+  <div>
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+  </div>
+  <button type="submit">Login</button>
+</form>
+
+<div class="form-redirect">Don't have an account? <a href="/signup">Sign Up</a></div>

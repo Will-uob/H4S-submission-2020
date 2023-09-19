@@ -1,0 +1,94 @@
+<div class="module-heading">
+  <div class="module-name gradient-text">Variables and Data Types</div>
+</div>
+
+<hr>
+
+<p>
+  Variables can be used to store and manipulate data. Data can come in different forms, called <em>data types</em>.
+  Below are all of the most common data types in JavaScript.
+</p>
+
+<pre>
+Number // 3, 4.6
+String // "a", "apple"
+Boolean // true, false
+Array // ["apple", 3, false]</pre>
+
+<p>
+  There are three ways of declaring the name of a variable.
+</p>
+
+<pre>
+var power = false
+// vars can be used anywhere in your program, and can be changed to different values
+
+let counter = 1 
+// using let is almost the same as var, but the variable will only be able to be referenced in
+// the same place it was defined
+
+const pi = 3.14159 // constants cannot be changed after they have been declared</pre>
+
+<hr>
+
+<div class="question fill" id="q1" number="1" type="fill">
+  <div class="question-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-edit">
+      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+    </svg>Fill in the blanks such that x is a variable with the value of <code>16</code>, and can be changed anywhere in
+    the program.</div>
+  <pre>
+<input type="text" placeholder="var" style="width: 2rem;"> x = 2 <input type="text" placeholder="*" style="width: 2rem;"> 8</pre>
+  <button onclick="checkFill()">Check Answer</button>
+</div>
+
+<hr>
+
+<div class="question fill" id="q2" number="2" type="fill">
+  <div class="question-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-edit">
+      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+    </svg>Fill in the blanks to create a constant called <code>name</code> with the value of <code>"Joe"</code>.</div>
+  <pre>
+<input type="text" placeholder="const" style="width: 4rem;"><input type="text" placeholder="name" style="width: 3.5rem;">=<input type="text" placeholder='"Joe"' style="width: 3rem;"></pre>
+  <button onclick="checkFill()">Check Answer</button>
+</div>
+
+<hr>
+
+<p>
+  Arrays are a special data type that act as a container of other bits of data. The elements in an array can be any
+  other JavaScript data type, including other arrays.
+</p>
+
+<pre>
+var myArray = [100, "paint", [200, "brush"], false] // Example array</pre>
+
+<p>
+  Each element in an array can be accessed by using <code>[]</code>. Arrays are 0-based in JavaScript, so the first
+  element of an array can be accessed by using <code>[0]</code>. This also works for setting an element's value.
+</p>
+
+<pre>
+myArray[0] // 100
+myArray[2] // [200, "brush"]
+myArray[3] = true</pre>
+
+<hr>
+
+<div class="question fill" id="q3" number="3" type="fill">
+  <div class="question-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-edit">
+      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+    </svg>Remove <code>"apples"</code> from the shopping list and replace them with <code>"bananas"</code>.</div>
+  <pre>
+let shoppingList = ["oranges", "apples", "grapes", "strawberries"]
+shoppingList<input type="text" placeholder="[1]" style="width: 1.8rem; margin-left: 0.2rem;">=<input type="text" placeholder='"bananas"' style="width: 5rem;"></pre>
+  <button onclick="checkFill()">Check Answer</button>
+</div>

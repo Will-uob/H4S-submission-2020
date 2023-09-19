@@ -1,0 +1,73 @@
+<div class="module-heading">
+  <div class="module-name gradient-text">Calculations</div>
+</div>
+
+<hr>
+
+<p>
+  JavaScript uses the same familiar operators as most other modern languages. Below are some of the most common
+  operators.
+</p>
+
+<pre>
++ // Addition
+- // Subtraction
+* // Multiplication
+/ // Division
+= // Assignment</pre>
+
+<p>
+  Simply typing in an expression to the browser console will return the answer.
+</p>
+
+<hr>
+
+<div class="question fill" id="q1" number="1" type="fill">
+  <div class="question-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-edit">
+      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+    </svg>Type in the following expressions to the browser console and fill in the answer.</div>
+  <pre>
+425 + 217<input type="text" placeholder="642" style="width: 2rem;">
+926 - 129<input type="text" placeholder="797" style="width: 2rem;">
+26 * 293<input type="text" placeholder="7618" style="width: 3rem;">
+782 / 17<input type="text" placeholder="46" style="width: 2rem;"></pre>
+  <button onclick="checkFill()">Check Answer</button>
+</div>
+
+<hr>
+
+<p>
+  JavaScript expressions follow the standard order of operations, so even though <code>-</code> is written before
+  <code>*</code>, the multiplication is carried out first.
+</p>
+
+<pre>
+500 - 10 * 5 // 450</pre>
+
+<p>
+  Brackets <code>()</code> can be used to group arithmetic operations, and take precedence over the standard order or
+  operations.
+</p>
+
+<p>
+  By default, JavaScript comes with the <code>Math</code> object. It can be used to manipulate numbers in many different
+  ways, the full list of which can be found <a
+    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math">here</a>. One function
+  of the <code>Math</code> object is to round decimal numbers, using <code>Math.round()</code>.
+</p>
+
+<div class="question fill" id="q2" number="2" type="fill">
+  <div class="question-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-edit">
+      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+    </svg>Use the <code>Math</code> object to evaluate the following expression.
+  </div>
+  <pre>
+Math.round( 346 / ( 19 * ( 26 - 14)) * ( 250 / 25))<input type="text" placeholder="15" style="width: 2rem;"></pre>
+  <button onclick="checkFill()">Check Answer</button>
+</div>

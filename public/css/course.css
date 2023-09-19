@@ -1,0 +1,84 @@
+#modules-container {
+  margin: 6rem 0;
+}
+
+.module {
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 1.5rem auto;
+  /* background-color: #ebebeb; */
+  box-shadow: 10px 10px 50px #0000001e;
+  padding: 2rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  transition: 200ms;
+}
+
+.module:hover {
+  box-shadow: 10px 10px 50px #00000041;
+}
+
+.module .vl {
+  border-left: 2px solid #ebebeb;
+  height: 5rem;
+}
+
+.module .number {
+  margin: 1rem 3.5rem 1rem 2rem;
+  font-size: 1.5em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.module .information {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.module-title {
+  font-style: italic;
+}
+
+.module-heading {
+  display: flex;
+  align-items: baseline;
+  margin: .5rem 3rem;
+}
+
+.module-info {
+  font-size: .75em;
+  margin-left: 1rem;
+  color: #7c7c7c;
+}
+
+.module .progress-container {
+  display: flex;
+  align-items: center;
+  margin: .5rem 3rem;
+}
+
+.module .progress-bar {
+  width: 0;
+  background: linear-gradient(140deg, #0099ff, #f700ff);
+  height: 10px;
+  border-radius: 10px;
+  margin-right: 1rem;
+  transition: 600ms;
+}
+
+.module .progress-background {
+  width: 95%;
+  background-color: #d8d8d8;
+  height: 10px;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.module .progress {
+  font-size: .65em;
+  font-style: italic;
+}
